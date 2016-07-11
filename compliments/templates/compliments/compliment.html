@@ -1,0 +1,7 @@
+<form action={% url 'compliments:compliment' %} method="post">
+    {% csrf_token %}
+    {{ form.message.label }}
+    <br>
+    {{ form.message }}
+    <p><input type="submit" value="Поднеси пофалба"></p>
+</form>
